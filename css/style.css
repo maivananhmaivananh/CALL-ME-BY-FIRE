@@ -1,0 +1,418 @@
+/*------------------------- Layout styles ------------------------*/ 
+body {
+	background:url(../images/bg-body3.jpg);
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	outline:none;
+}
+a img {
+	border:0;
+	display:block;
+}
+.page {
+	width:960px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+	padding:0 0 102px 0;
+}
+p {
+	font-size:14px;
+	line-height:30px;
+	letter-spacing:0.05em;
+}
+p a {
+	color: #BFBFBF;
+}
+p a:hover {
+	color:#d8d6bd;
+}
+/*------------------------- Sidebar ------------------------*/
+.sidebar {
+	float: left;
+	margin: 59px 0 0;
+	overflow: hidden;
+	padding: 0 0 28px 20px;
+	position: relative;
+	width: 130px;
+}
+.logo {
+	height:162px;
+	height: 210px;
+	width:959px;
+	background:url(../images/bg-logo.jpg) repeat-y;
+}
+.logo span {
+	display: block;
+	height: 193px;
+	padding:48px 0 0 36px;
+}
+.logo a {
+	display:block;
+	width: 89px;
+}
+.sidebar ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.sidebar ul li.selected {
+	background:url(../images/bg-nav-selected.jpg) no-repeat;
+}
+.sidebar ul li {
+	background:url(../images/bg-nav.jpg) no-repeat;
+	width:130px;
+	height:60px;
+	text-align:right;
+}
+.sidebar ul li a {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#989898;
+	font-size:16px;
+	text-decoration:none;
+	line-height: 60px;
+	letter-spacing:0.1em;
+	height:60px;
+	width:115px;
+	display:block;
+	padding:0 15px 0 0;
+}
+.sidebar ul li.selected a {
+	color:#c20808;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+.sidebar ul li.selected a:hover {
+	color:#c20808;
+}
+.sidebar ul li a:hover {
+	color:#fff;
+}
+
+.sidebar p.footnote {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c20808;
+    line-height: 20px;
+    font-size: 12px;
+    position: fixed; /* Makes it stay in one position relative to the viewport */
+    bottom: 0; /* Aligns it to the bottom of the viewport */
+    right: 0; /* Aligns it to the right of the viewport */
+    margin: 0; /* Removes unnecessary margin */
+    padding: 10px; /* Adds some padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: adds a translucent background for readability */
+    z-index: 10; /* Ensures it appears above other elements if needed */
+}
+
+.long-picture {
+    position: fixed; /* Keeps the picture in place even when the page scrolls */
+    top: 0; /* Aligns the top of the image with the top of the page */
+    left: 0; /* Aligns the image to the left edge of the page */
+    width: auto; /* Allows the image to retain its original width */
+    height: 100%; /* Stretches the image to fill the height of the viewport */
+    z-index: -1; /* Places the image behind other content */
+}
+/*------------------------- Body ------------------------*/
+.body {
+	float:left;
+	width:809px;
+	border-width:1px;
+	border-style:none solid none none;
+	border-color:#000000;
+	background:url(../images/bg-content.jpg) repeat-y;
+	margin: -171px 0 0;
+	min-height:1289px;
+}
+.body ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.body ul li p {
+}
+.body ul li {
+	background:url(../images/separator.jpg) no-repeat right top;
+}
+.body ul li.first {
+	background:url(../images/bg-first-separator.jpg) no-repeat left top;
+}
+.body ul li.first h3 {
+	margin:0 0 0 30px;
+	padding:44px 0 0;
+}
+.body ul li.first h3 a {
+	font-family:Franklin Gothic, "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#c20808;
+	text-decoration:none;
+	font-weight:normal;
+	line-height:30px;
+	letter-spacing:0.05em;
+	display:block;
+	margin:0;
+}
+.body ul li.first h3 a:hover {
+	color:#cf4444;
+}
+.body ul li.first span {
+	font-family:Franklin Gothic, Helvetica, sans-serif;
+	color:#838383;
+	font-size:12px;
+	line-height:30px;
+	margin:4px 0 11px 30px;
+	display:block;
+}
+.body ul li.first a {
+	margin:0 0 0 30px;
+	display:block;
+}
+.body ul li.first a img:hover {
+	filter:alpha(opacity=90);/* Needed for IE7 */
+	opacity:0.9;
+}
+.body ul li.first p {
+	color:#bfbfbf;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:30px;
+	padding:0 30px;
+	text-align:justify;
+	margin:18px 0 42px;
+}
+.body ul li.first p a {
+	display:inline;
+	margin:0;
+}
+.body ul li.second {
+	padding:50px 0 0;
+}
+.body ul li.second > a {
+	margin:0 30px 0;
+	display:block;
+	float:left;
+}
+.body ul li.second a img:hover {
+	filter:alpha(opacity=90);/* Needed for IE7 */
+	opacity:0.9;
+}
+.body ul li.second h3 {
+	margin:0;
+}
+.body ul li.second h3 a {
+	font-family:Franklin Gothic, "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#c20808;
+	font-weight:normal;
+	text-decoration:none;
+	line-height:30px;
+	letter-spacing:0.05em;
+}
+.body ul li.second h3 a:hover {
+	color:#cf4444;
+}
+.body ul li.second span {
+	font-family:Franklin Gothic, Helvetica, sans-serif;
+	color:#838383;
+	font-size:12px;
+	line-height:30px;
+	margin:5px 0 0 30px;
+	display:block;
+}
+.body ul li.second p {
+	color:#bfbfbf;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:30px;
+	padding:0 30px;
+	text-align:justify;
+	margin:0 0 33px;
+}
+.body ul li.second p a {
+	color:#bfbfbf;
+	display:inline;
+	margin:0;
+}
+.body ul li.second p a:hover {
+	color:#ff8a00;
+}
+.body ul li.third {
+	padding:50px 0 0;
+	position:relative;
+}
+.body ul li.third h3 {
+	margin:0 0 0 30px;
+}
+.body ul li.third h3 a {
+	font-family:Franklin Gothic, "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#c20808;
+	font-weight:normal;
+	text-decoration:none;
+}
+.body ul li.third h3 a:hover {
+	color:#cf4444;
+}
+.body ul li.third span {
+	font-family:Franklin Gothic, Helvetica, sans-serif;
+	color:#838383;
+	font-size:12px;
+	line-height:30px;
+	margin:5px 0 0 30px;
+	display:block;
+}
+.body ul li.third p {
+	margin: 0 30px;
+	color:#bfbfbf;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:30px;
+	text-align:justify;
+	width: 400px;
+}
+.body ul li.third p a {
+	color:#bfbfbf;
+	display:inline;
+	margin:0;
+}
+.body ul li.third p a:hover {
+	color:#ff8a00;
+}
+.body ul li.third > a {
+	position:absolute;
+	top:50px;
+	right:30px;
+}
+.body ul li.third a img:hover {
+	filter:alpha(opacity=90);/* Needed for IE7 */
+	opacity:0.9;
+}
+.body .about {
+	padding:18px 30px 0;
+	background:url(../images/separator.jpg) no-repeat right top;
+}
+.body .about h3 {
+	font-family:Franklin Gothic, "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#ff8a00;
+	font-weight:normal;
+	margin:27px 0 0;
+}
+.body .about p {
+	color:#bfbfbf;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:30px;
+	text-align:justify;
+	margin:3px 0 26px;
+}
+
+.body .about p a {
+	display:inline;
+	margin:0;
+}
+
+.cart-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+#products {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 80%;
+}
+.product {
+	width: 200px;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #f9f9f9;
+}
+.product img {
+	width: 100%;
+	border-radius: 8px;
+}
+.product h2 {
+	font-size: 16px;
+	margin: 10px 0;
+}
+.product .price {
+	font-size: 14px;
+	color: #333;
+}
+.add-to-cart {
+	padding: 10px 15px;
+	background-color: #c20808;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.add-to-cart:hover {
+	background-color: #cf4444;
+}
+#cart {
+	width: 35%;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: #f9f9f9;
+}
+#cart h2 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #c20808;
+}
+#cart-items {
+	list-style-type: none;
+	padding: 0;
+}
+#cart-items li {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: white;
+}
+#total-price {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#checkout {
+	padding: 10px 15px;
+	background-color: #c20808;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 100%;
+}
+#checkout:hover {
+	background-color: #cf4444;
+}
+	
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 90px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c20808; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

@@ -1,0 +1,126 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Merch Shop</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<style>
+	h1 {text-align: center;}
+	</style>
+</head>
+
+<body>
+	<div class="background">
+	<img src="images/long-img.jpg" alt="Long Picture" class="long-picture">
+		<div class="page">
+			<div class="logo">
+				<span> <a href="index.html"><img src="images/ATVNCG-logo.png" alt=""></a> </span>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li>
+						<a href="index.html">news</a>
+					</li>
+					<li>
+						<a href="about.html">about</a>
+					</li>
+					<li class="selected">
+						<a href="shop.html">shop</a>
+					</li>
+				</ul>
+				<p class="footnote">
+					ID 21229034 <br> MAI VAN ANH
+				</p>
+			</div>
+				<div class="body">
+				<h1 style="color:white;">Welcome to Our Merch Shop</h1>
+					<div class="cart-container">
+					<!-- Shopping Cart Content -->
+						<div id="products">
+							<div class="product">
+								<img src="images/ao-den1.jpg" alt="Item 1">
+								<h2>Inferno Slogan Tee (Black)</h2>
+								<p class="price">$14.00</p>
+								<button class="add-to-cart" data-id="1">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/ao-trang.jpg" alt="Item 2">
+								<h2>Inferno Slogan Tee (White)</h2>
+								<p class="price">$14.00</p>
+								<button class="add-to-cart" data-id="2">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/ao-den2.jpg" alt="Item 3">
+								<h2>Inferno Logo Tee</h2>
+								<p class="price">$14.00</p>
+								<button class="add-to-cart" data-id="3">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/ao-den3.jpg" alt="Item 4">
+								<h2>Wildfire Tee</h2>
+								<p class="price">$14.00</p>
+								<button class="add-to-cart" data-id="4">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/hoodie.jpg" alt="Item 5">
+								<h2>Flash Hoodie</h2>
+								<p class="price">$20.00</p>
+								<button class="add-to-cart" data-id="5">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/hat.jpg" alt="Item 6">
+								<h2>Lava Dome Cap</h2>
+								<p class="price">$13.00</p>
+								<button class="add-to-cart" data-id="6">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/ao-khoac.jpg" alt="Item 7">
+								<h2>Amber Jacket</h2>
+								<p class="price">$30.00</p>
+								<button class="add-to-cart" data-id="7">Add to Cart</button>
+							</div>
+							<div class="product">
+								<img src="images/quan.jpg" alt="Item 8">
+								<h2>Amber Pants</h2>
+								<p class="price">$25.00</p>
+								<button class="add-to-cart" data-id="8">Add to Cart</button>
+							</div>
+						<!-- Add more product items here -->
+						</div>
+						<div id="cart">
+							<h2>Your Cart</h2>
+							<ul id="cart-items">
+								<!-- Cart items will be dynamically inserted here -->
+							</ul>
+							<p id="total-price">Total: $0.00</p>
+							<button id="checkout">Checkout</button>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<script src="cart.js"></script> <!-- Add a script file for cart functionality -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+						// Get the button
+					let mybutton = document.getElementById("myBtn");
+
+						// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+
+					function scrollFunction() {
+						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						mybutton.style.display = "block";
+					} else {
+						mybutton.style.display = "none";
+						}
+					}
+
+						// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
+}
+	</script>
+</body>
+</html>
+</body>	
